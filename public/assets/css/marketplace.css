@@ -1,0 +1,29 @@
+.contents {
+    padding: 74px 15px 72px 15px;   
+}
+.contents.expanded {
+    padding-left: 15px;
+}
+.footer-wrapper {
+    padding: 24px 0 24px 0;
+}
+.contents.expanded + .footer-wrapper {
+    padding-left: 0px;
+}
+.footer-copyright {
+    padding-left: 0px;
+}
+.breadcrumb-main {
+    margin:0;
+}
+.course-card {
+    cursor: pointer;
+}
+.card-plan,
+.course-card{
+    transition: transform .2s; /* Animation */
+}
+.card-plan:hover,
+.course-card:hover{
+    transform: scale(1.05)
+}

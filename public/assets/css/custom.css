@@ -1,0 +1,170 @@
+.swal2-title {
+    font-size: 20px !important;
+    font-weight: normal !important;
+}
+
+.swal2-icon {
+    font-size: 13px !important;
+}
+
+.swal2-container.swal2-backdrop-show,
+.swal2-container.swal2-noanimation {
+    z-index: 9999 !important;
+}
+.page-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 13px;
+}
+.course-estatistic {
+    text-align: center;
+}
+.course-estatistic li {
+    text-align: center;
+    padding: 0px 6px 0px 6px;
+}
+.course-estatistic li small {
+    font-size: 12px;
+}
+
+#ui-datepicker-div {
+    z-index: 9999999 !important;
+}
+.task-list-btn button {
+    background-color: rgba(1, 184, 26, 0.2) !important;
+}
+.project-task-list p {
+    margin-bottom: 0;
+}
+.activities li a i {
+    font-size: 20px;
+    margin-right: 20px;
+}
+.activities li a.active,
+.activities li a:hover {
+    color: var(--color-primary);
+    background-color: rgba(var(--color-primary-rgba), 0.1);
+}
+.activities li {
+    padding: 5px;
+}
+.activities li a {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: block;
+    padding: 6.9px 15px;
+    font-size: 14px;
+    color: var(--color-gray);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.activities li a.active .badge,
+.activities li a.active i,
+.activities li a.active img,
+.activities li a.active span,
+.activities li a.active svg,
+.activities li a:hover .badge,
+.activities li a:hover i,
+.activities li a:hover img,
+.activities li a:hover span,
+.activities li a:hover svg {
+    color: var(--color-primary);
+}
+.activities li a img,
+.activities li a svg {
+    margin-right: 20px;
+    width: 16px;
+    color: var(--color-lighten);
+}
+.activities li a .badge.badge-primary {
+    color: var(--color-primary);
+    background-color: rgba(var(--color-primary-rgba), 0.1);
+}
+.activities li a .badge {
+    float: right;
+    margin-left: auto;
+    margin-right: 0;
+    width: auto;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+.card-activitie {
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+.card-activitie:hover {
+    transform: scale(1.02);
+}
+.card-activitie .card-activitie-image {
+    border-radius: 8px;
+    height: 180px;
+}
+.card-activitie .card-activitie-body {
+    padding: 10px;
+}
+.card-activitie .card-activitie-body .title {
+    padding-top: 10px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.card-activitie .card-activitie-body .description {
+    text-align: justify;
+    font-size: 14px;
+}
+.form-control,
+.form-control::file-selector-button {
+    height: 48px;
+}
+/* Tables - No More Tables technique (991px is the bootstrap SM max-width) */
+@media only screen and (max-width: 991px) {
+    .table.table-no-more,
+    .table.table-no-more thead,
+    .table.table-no-more tbody,
+    .table.table-no-more tr,
+    .table.table-no-more th,
+    .table.table-no-more td {
+        display: block;
+    }
+
+    .table.table-no-more thead tr {
+        left: -9999px;
+        position: absolute;
+        top: -9999px;
+    }
+
+    .table.table-no-more tr {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table.table-no-more td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        white-space: normal;
+    }
+
+    .table.table-no-more td:before {
+        content: attr(data-title);
+        font-weight: bold;
+        left: 6px;
+        padding-right: 10px;
+        position: absolute;
+        text-align: left;
+        top: 8px;
+        white-space: nowrap;
+        width: 45%;
+    }
+
+    .table.table-no-more.table-bordered td {
+        border-bottom: 1px solid #efefef;
+    }
+
+    .table.table-no-more.table-condensed td:before {
+        top: 5px;
+    }
+}
